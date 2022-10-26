@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Weather Forecaster</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title">&#127781 Weather Forecaster &#127785</h1>
+    <p>Search Citys for 5 Day Weather Forecast</p>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search By City</h3>
+        <form id="search" class="card-body">
+          <label class="form-label">City Name</label>
+          <input id="searchCity" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search History</h3>
+        <div id="search-history" class="card-body">
+          <button id="sh1" class="btn">Past-Search</button>
+          <button id="sh2" class="btn">Past-Search</button>
+          <button id="sh3" class="btn">Past-Search</button>
+          <button id="sh4" class="btn">Past-Search</button>
+          <button id="sh5" class="btn">Past-Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">Forecast: <span id="city-search-term"></span></h2>
+      <div id="weather-container" class="list-group card"></div>
+      <div id="forecast-container" class="list-group card"></div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
